@@ -1,14 +1,14 @@
 <template>
   <div>
-    <p>Product id is {{  id  }}</p>
+    <p>Product details for {{ id }}</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste necessitatibus accusamus architecto dignissimos non harum tenetur rem itaque, dolor aut?</p>
   </div>
 </template>
 
 <script setup>
   const { id } = useRoute().params
-  // acess http://localhost:3000/products/123, you'll see the value
+
+  definePageMeta({
+    layout: "products",
+  })
 </script>
-
-<style scoped>
-
-</style>
